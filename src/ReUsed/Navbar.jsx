@@ -5,9 +5,9 @@ import { Link} from "react-router-dom";
 const Navbar = () => {
      const navItem = <>
          <li><Link to='/' className="hover:bg-transparent hover:pb-2 hover:border-b-2 hover:border-b-[#00D7FF] mr-2">Home</Link></li>
-         <li><Link to='/' className="hover:bg-transparent hover:pb-2 hover:border-b-2 hover:border-b-[#00D7FF] mr-2">About</Link></li>
          <li><Link to='/features' className="hover:bg-transparent hover:pb-2 hover:border-b-2 hover:border-b-[#00D7FF] mr-2">Features</Link></li>
          <li><Link to='/' className="hover:bg-transparent hover:pb-2 hover:border-b-2 hover:border-b-[#00D7FF] mr-2">Testimonial</Link></li>
+         <li><Link to='/contact' className="hover:bg-transparent hover:pb-2 hover:border-b-2 hover:border-b-[#00D7FF] mr-2">Contact</Link></li>
      </>
     return (
         <div className="navbar bg-base-100 fixed z-20 shadow-xl md:max-w-screen-xl mx-auto px-2">
