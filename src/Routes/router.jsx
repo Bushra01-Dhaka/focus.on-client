@@ -6,6 +6,8 @@ import Contact from "../Components/Contact/COntact";
 import ErrorPage from "../Pages/Error/ErrorPage";
 import Login from "../Components/Login/Login";
 import SignUp from "../Components/SignUp/SignUp";
+import Dashboard from "../Layout/Dashboard/Dashboard";
+import MyDashboard from "../Pages/DashboardPage/MyDash/MyDashboard";
 
 const router = createBrowserRouter([
     {
@@ -35,6 +37,16 @@ const router = createBrowserRouter([
         }
       ]
     },
+    {
+      path:"dashboard",
+      element:<Dashboard></Dashboard>,
+      children: [
+        {
+          path: "myDashboard",
+          element: <MyDashboard></MyDashboard>
+        }
+      ]
+    }
 
   ]);
 

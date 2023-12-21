@@ -21,7 +21,7 @@ const Navbar = () => {
       <li>
         <Link
           to="/"
-          className="hover:bg-transparent hover:pb-2 hover:border-b-2 hover:border-b-[#00D7FF] mr-2"
+          className="hover:bg-transparent hover:pb-2 hover:border-b-2 hover:border-b-[#00D7FF] mr-1"
         >
           Home
         </Link>
@@ -29,23 +29,26 @@ const Navbar = () => {
       <li>
         <Link
           to="/features"
-          className="hover:bg-transparent hover:pb-2 hover:border-b-2 hover:border-b-[#00D7FF] mr-2"
+          className="hover:bg-transparent hover:pb-2 hover:border-b-2 hover:border-b-[#00D7FF] mr-1"
         >
           Features
         </Link>
       </li>
-      <li>
+      {/* testimonial */}
+
+      {/* <li>
         <Link
           to="/testimonial"
-          className="hover:bg-transparent hover:pb-2 hover:border-b-2 hover:border-b-[#00D7FF] mr-2"
+          className="hover:bg-transparent hover:pb-2 hover:border-b-2 hover:border-b-[#00D7FF] mr-1"
         >
           Testimonial
         </Link>
-      </li>
+      </li> */}
+
       <li>
         <Link
           to="/contact"
-          className="hover:bg-transparent hover:pb-2 hover:border-b-2 hover:border-b-[#00D7FF] mr-2"
+          className="hover:bg-transparent hover:pb-2 hover:border-b-2 hover:border-b-[#00D7FF] mr-1"
         >
           Contact
         </Link>
@@ -56,21 +59,24 @@ const Navbar = () => {
           <Link
           to="/"
           onClick={handleLogOut}
-          className="hover:bg-transparent hover:pb-2 hover:border-b-2 hover:border-b-[#00D7FF] mr-2"
+          className="hover:bg-transparent hover:pb-2 hover:border-b-2 hover:border-b-[#00D7FF] mr-1"
         >
-          Log Out
+          Log out
         </Link>
         </li>
         :
         <li>
         <Link
           to="/login"
-          className="hover:bg-transparent hover:pb-2 hover:border-b-2 hover:border-b-[#00D7FF] mr-2"
+          className="hover:bg-transparent hover:pb-2 hover:border-b-2 hover:border-b-[#00D7FF] mr-1"
         >
           Login
         </Link>
       </li>
        
+      }
+      {
+        user && <li><Link to="/dashboard/myDashboard" className="hover:bg-transparent hover:pb-2 hover:border-b-2 hover:border-b-[#00D7FF] mr-1">Dashboard</Link></li>
       }
       
 
@@ -109,7 +115,7 @@ const Navbar = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-64"
           >
             {navItem}
           </ul>
