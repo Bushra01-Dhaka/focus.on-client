@@ -8,6 +8,8 @@ import Login from "../Components/Login/Login";
 import SignUp from "../Components/SignUp/SignUp";
 import Dashboard from "../Layout/Dashboard/Dashboard";
 import MyDashboard from "../Pages/DashboardPage/MyDash/MyDashboard";
+import Profile from "../Pages/DashboardPage/Profile/Profile";
+
 
 const router = createBrowserRouter([
     {
@@ -44,6 +46,10 @@ const router = createBrowserRouter([
         {
           path: "myDashboard",
           element: <MyDashboard></MyDashboard>
+        },
+        {
+          path: "profile",
+          element: <Profile></Profile>
         }
       ]
     }
