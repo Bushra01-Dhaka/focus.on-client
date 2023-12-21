@@ -3,6 +3,7 @@ import { MdEmail } from "react-icons/md";
 import "./Contact.css"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { Helmet } from 'react-helmet-async';
 AOS.init();
 const Contact = () => {
     
@@ -13,6 +14,9 @@ const Contact = () => {
         backgroundImage: "url(https://i.ibb.co/rxNnfKj/wave-blue-bg.png)",
       }}
     >
+       <Helmet>
+                <title>Focus.on | Contact</title>
+            </Helmet>
       <div className="flex flex-col md:flex-row justify-center items-center gap-6 py-10">
         {/* left-side */}
         <div data-aos="fade-zoom-in"  data-aos-delay="100" className="flex-1 p-8">

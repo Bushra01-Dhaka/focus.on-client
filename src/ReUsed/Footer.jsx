@@ -26,9 +26,9 @@ const Footer = () => {
     >
       <div className="flex justify-center items-center">
         <div className="text-center p-6">
-          <h1 className="text-3xl font-semibold">
+          <Link to="/"><h1 className="text-3xl font-semibold">
             focus. <span className="text-[#00D7FF]">on</span>
-          </h1>
+          </h1></Link>
           <p className="py-6 text-3xl">
             Now {`it's time to be`}{" "}
             <span className="font-bold text-[#00D7FF]">{title}</span>
@@ -51,7 +51,7 @@ const Footer = () => {
             </div>
            
           </div>
-          <p className="text-center relative bottom-[-100px]">Copyright © 2023 - All right reserved by focus.on</p>
+          <small className="text-center relative bottom-[-100px]">Copyright © 2023 - All right reserved by focus.on</small>
         </div>
       </div>
      

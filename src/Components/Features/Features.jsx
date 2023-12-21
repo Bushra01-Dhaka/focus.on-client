@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import features_img from "../../assets/focus-ly-images/features-bg.png";
 import "./Features.css"
 
@@ -5,6 +6,9 @@ const Features = () => {
   return (
     <div className="pt-[50px]">
         {/* image part */}
+        <Helmet>
+                <title>Focus.on | Features</title>
+            </Helmet>
      <div>
      <img
         src={features_img}

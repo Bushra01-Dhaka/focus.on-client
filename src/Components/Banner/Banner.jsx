@@ -4,7 +4,7 @@ import  "./Banner.css"
 
 const Banner = () => {
     return (
-        <div className="pt-[100px] hero min-h-screen flex justify-center items-center" style={{backgroundImage: 'url(https://i.ibb.co/XY089pZ/blue-banner-bg.png)'}}>
+        <div className="bg-fixed pt-[100px] hero min-h-screen flex justify-center items-center" style={{backgroundImage: 'url(https://i.ibb.co/XY089pZ/blue-banner-bg.png)'}}>
             <div className="md:max-w-2xl mx-auto  bg-base-200 bg-opacity-40 p-6 my-auto rounded-md shadow-md">
                 <h1 className="text-3xl  md:text-4xl lg:text-5xl text-center font-semibold">Elevate Your Productivity with <span className="font-bold border-b-4 border-b-[#00D7FF] ">focus.<span className="text-[#00D7FF]">on</span></span></h1>
                 <p className="py-6 text-center">Streamline your life effortlessly with Focus.on, the ultimate task management solution that empowers you to efficiently organize and conquer all your tasks with ease.</p>
