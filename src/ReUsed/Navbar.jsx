@@ -22,7 +22,7 @@ const Navbar = () => {
           </div>
          <div className="flex items-center">
          {/* <img className="w-[70px] h-[70px] rounded-[70px] object-fill" src={img} alt="" /> */}
-          <a className="text-xl font-bold text-black">Focus.<span className="text-[#00D7FF]">on</span></a>
+          <a className="text-xl font-bold text-black">focus.<span className="text-[#00D7FF]">on</span></a>
          </div>
         </div>
         <div className="navbar-end hidden lg:flex">
