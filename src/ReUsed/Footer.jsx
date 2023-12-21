@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { MdEmail } from "react-icons/md";
 import { FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
+import "./Footer.css"
 
 const Footer = () => {
   const [title, setTitle] = useState("Web Developer");
@@ -35,7 +36,7 @@ const Footer = () => {
           </p>
 
           <div className="md:max-w-lg mx-auto text-center">
-            <div className="flex justify-center text-3xl gap-4 text-center mx-auto">
+            <div className="flex justify-center text-3xl gap-4 text-center mx-auto animated-image">
               <Link>
                 <FaTwitter className="hover:text-[#00D7FF]"></FaTwitter>
               </Link>
