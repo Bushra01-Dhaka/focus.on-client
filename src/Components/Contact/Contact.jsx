@@ -13,7 +13,7 @@ const Contact = () => {
         backgroundImage: "url(https://i.ibb.co/rxNnfKj/wave-blue-bg.png)",
       }}
     >
-      <div className="flex flex-col md:flex-row justify-center items-center gap-6">
+      <div className="flex flex-col md:flex-row justify-center items-center gap-6 py-10">
         {/* left-side */}
         <div data-aos="fade-zoom-in"  data-aos-delay="100" className="flex-1 p-8">
         <h1 className="text-4xl lg:text-5xl">Reach out to us today via any of the given information</h1>
