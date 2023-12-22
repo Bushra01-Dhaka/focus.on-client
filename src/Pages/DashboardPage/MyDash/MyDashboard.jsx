@@ -6,11 +6,13 @@ import { AuthContext } from "../../../Components/Provider/AuthProvider";
 import toast from "react-hot-toast";
 import useAxiosPublic from "../../../Hooks/useAxiosPublic";
 import TasksCreated from "./TasksCreated/TasksCreated";
+import useTasks from "../../../Hooks/useTasks";
 
 
 const MyDashboard = () => {
   const {user} = useContext(AuthContext);
   const axiosPublic = useAxiosPublic();
+  const [,,refetch] = useTasks();
   const {
     register,
     handleSubmit,
@@ -37,6 +39,9 @@ const MyDashboard = () => {
         toast.success("Task added Successful.", {
           position: "top-center",
         });
+         //refetch all tasks data
+         refetch();
+
         //navigate
         // navigate("/");
       }

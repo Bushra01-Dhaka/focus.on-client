@@ -10,9 +10,17 @@ import AuthProvider from './Components/Provider/AuthProvider.jsx';
 import { HelmetProvider } from 'react-helmet-async';
 import { Toaster } from 'react-hot-toast';
 
+import {
+  QueryClient,
+  QueryClientProvider,
+} from "@tanstack/react-query";
+
+const queryClient = new QueryClient();
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-   <HelmetProvider>
+    <QueryClientProvider client={queryClient}>
+    <HelmetProvider>
    <AuthProvider>
     <Toaster/>
    <div className='md:max-w-screen-xl mx-auto'>
@@ -20,5 +28,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
    </div>
    </AuthProvider>
    </HelmetProvider>
+    </QueryClientProvider>
   </React.StrictMode>,
 )
