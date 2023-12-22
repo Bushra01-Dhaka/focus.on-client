@@ -7,6 +7,7 @@ import toast from "react-hot-toast";
 import useAxiosPublic from "../../../Hooks/useAxiosPublic";
 import TasksCreated from "./TasksCreated/TasksCreated";
 import useTasks from "../../../Hooks/useTasks";
+import { Helmet } from "react-helmet-async";
 
 
 const MyDashboard = () => {
@@ -56,6 +57,10 @@ const MyDashboard = () => {
         backgroundImage: "url(https://i.ibb.co/T1nsTJX/wave-blue-bg-Copy.png)",
       }}
     >
+      <Helmet>
+        <title>Focus.on | Dashboard | MyDashboard </title>
+      </Helmet>
+
       <Boxes></Boxes>
       {/* ---------- Add Tasks ----------- */}
       <div className="px-6 pt-6 border-b-2 flex items-center justify-between">

@@ -40,7 +40,7 @@ const SignUp = () => {
             position: "top-right",
           });
           
-          navigate("/");
+          navigate("/dashboard/myDashboard");
 
             //create user entry ion database
             // const userInfo = {

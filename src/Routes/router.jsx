@@ -9,6 +9,7 @@ import SignUp from "../Components/SignUp/SignUp";
 import Dashboard from "../Layout/Dashboard/Dashboard";
 import MyDashboard from "../Pages/DashboardPage/MyDash/MyDashboard";
 import Profile from "../Pages/DashboardPage/Profile/Profile";
+import ListTodo from "../Pages/DashboardPage/ListTodo/ListTodo";
 
 
 const router = createBrowserRouter([
@@ -50,6 +51,10 @@ const router = createBrowserRouter([
         {
           path: "profile",
           element: <Profile></Profile>
+        },
+        {
+          path:"allTodo",
+          element:<ListTodo></ListTodo>
         }
       ]
     }

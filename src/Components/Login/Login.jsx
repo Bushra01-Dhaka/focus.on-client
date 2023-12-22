@@ -29,7 +29,8 @@ const Login = () => {
             const loggedUser = result.user;
             console.log(loggedUser);
             //navigate
-            navigate(from, { replace: true });
+            // navigate(from, { replace: true });
+            navigate("/dashboard/myDashboard")
             //toast
             toast.success("Log in Successful.", {
               position: "top-right",

@@ -3,7 +3,7 @@ import TodoList from "./TodoList";
 
 const TasksCreated = () => {
 
-    const [tasks, refetch] = useTasks();
+    const [tasks] = useTasks();
     console.log(tasks);
 
     return (
