@@ -3,7 +3,7 @@ import Lists from "./Lists/Lists";
 
 
 const ListTodo = () => {
-    const [tasks,,refetch] = useTasks();
+    const [tasks] = useTasks();
     console.log(tasks);
     return (
         <div className="p-4 bg-slate-300">

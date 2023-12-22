@@ -38,7 +38,7 @@ const Dashboard = () => {
             <NavLink to="/dashboard/profile"><FaUser></FaUser> Profile</NavLink>
           </li>
           <li>
-            <NavLink to="/dashboard/allTodo"><FaListAlt></FaListAlt> Todo lists</NavLink>
+            <NavLink to="/dashboard/allTodo"><FaListAlt></FaListAlt>Activity Progress</NavLink>
           </li>
 
           {/* landing page routes */}

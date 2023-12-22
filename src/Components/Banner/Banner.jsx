@@ -27,7 +27,7 @@ const Banner = () => {
         </p>
         <div className="text-center">
           {user ? (
-            <Link to="/features">
+            <Link to="/dashboard/myDashboard">
               <button className="animated-image text-center my-6 md:w-[150px] btn bg-[#00D7FF] rounded-full  shadow-lg border-0 hover:bg-transparent hover:border-2 hover:border-[#00D7FF] hover:text-black font-bold">
                 {`Let's Explore`}
                 <GoArrowDownRight></GoArrowDownRight>

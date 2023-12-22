@@ -18,7 +18,6 @@ const SignUp = () => {
   const {
     register,
     handleSubmit,
-    reset,
     formState: { errors },
   } = useForm();
 
@@ -42,23 +41,7 @@ const SignUp = () => {
           
           navigate("/dashboard/myDashboard");
 
-            //create user entry ion database
-            // const userInfo = {
-            //   name: data.name,
-            //   email: data.email,
-            // };
-            // axiosPublic.post("/users", userInfo).then((res) => {
-            //   if (res.data.insertedId) {
-            //     console.log("new user added")
-            //     reset();
-            //     //toast
-            //     toast.success("Log in Successful.", {
-            //       position: "top-right",
-            //     });
-            //     //navigate
-            //     navigate("/");
-            //   }
-            // });
+           
         })
         .catch((error) => console.log(error));
     });
@@ -70,23 +53,7 @@ const SignUp = () => {
         const loggedUser = result.user;
         console.log(loggedUser);
 
-    //       const userInfo = {
-    //         name: result.user?.displayName,
-    //         email: result.user?.email
-    //       }
-    //       axiosPublic.post('/users', userInfo)
-    //       .then(res => {
-    //         console.log(res.data);
-
-    //         //toast
-    //     toast.success("Log in Successful.", {
-    //       position: "top-right",
-    //     });
-    //     //navigate
-    //     navigate("/");
-
-
-    //    })
+  
        
        //...
          //toast

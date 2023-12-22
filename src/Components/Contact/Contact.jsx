@@ -4,9 +4,20 @@ import "./Contact.css"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Helmet } from 'react-helmet-async';
+import { useContext } from 'react';
+import { AuthContext } from '../Provider/AuthProvider';
+import toast from 'react-hot-toast';
+import { useNavigate } from 'react-router-dom';
 AOS.init();
 const Contact = () => {
-    
+    const {user} = useContext(AuthContext);
+    const navigate = useNavigate();
+    const handleSubscribe = () => {
+      toast.success("Subscribe Successfully.", {
+        position: "top-center",
+      });
+       navigate("/")
+    }
   return (
     <div
       className="hero min-h-screen pt-[50px]"
@@ -34,9 +45,14 @@ const Contact = () => {
         <div className="flex-1 p-8">
             <div>
                 <h2 className="text-3xl">{`Don't want to miss any updates?`} Subscribe Now!</h2>
-                <input type="email" placeholder="Your email" className="border-b-2 py-4 outline-0 w-full max-w-xs" />
+                {
+                  user ?  <input type="email" placeholder={user?.email} className="border-b-2 py-4 outline-0 w-full max-w-xs" />
+                  :
+                  <input type="email" placeholder="Your email" className="border-b-2 py-4 outline-0 w-full max-w-xs" />
+                }
+              
                 <br />
-                <button className="animated-image  text-center my-8 md:w-[150px] btn bg-[#00D7FF] rounded-full  shadow-lg border-0 hover:bg-transparent hover:border-2 hover:border-[#00D7FF] hover:text-black font-bold">{`Subscribe Now`}</button>
+                <button onClick={handleSubscribe} className="animated-image  text-center my-8 md:w-[150px] btn bg-[#00D7FF] rounded-full  shadow-lg border-0 hover:bg-transparent hover:border-2 hover:border-[#00D7FF] hover:text-black font-bold">{`Subscribe Now`}</button>
             </div>
         </div>
       </div>

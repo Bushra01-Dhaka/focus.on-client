@@ -1,5 +1,5 @@
 import { Helmet } from "react-helmet-async";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import img from "../../assets/focus-ly-images/login.png"
 import toast from "react-hot-toast";
 import { AuthContext } from "../Provider/AuthProvider";
@@ -12,10 +12,10 @@ const Login = () => {
     
     const { signIn, googleSignIn, githubSignIn} = useContext(AuthContext);
     const navigate = useNavigate();
-    const location = useLocation();
+    // const location = useLocation();
     // const axiosPublic = useAxiosPublic();
   
-    const from = location.state?.from?.pathname || "/";
+    // const from = location.state?.from?.pathname || "/";
 
     const handleLogin = (event) => {
         event.preventDefault();
@@ -46,18 +46,7 @@ const Login = () => {
 
       const handleGoogleLogin = () => {
         googleSignIn()
-        // .then(result => {
-        //   const loggedUser = result.user;
-        //   console.log(loggedUser);
     
-        //   const userInfo = {
-        //     name: result.user?.displayName,
-        //     email: result.user?.email
-        //   }
-        //   axiosPublic.post('/users', userInfo)
-        //   .then(res => {
-        //     console.log(res.data);
-
              //toast 
           toast.success("Log in Successful.", {
             position: "top-right",
@@ -65,14 +54,6 @@ const Login = () => {
           //navigate
           navigate("/");
 
-        //   })
-    
-        // })
-        // .catch(error => {
-        //   console.error(error);
-           
-        // }
-        // )
       }
 
       const handleGithubSignIn = () => {
