@@ -5,6 +5,7 @@ import { useContext } from "react";
 import { AuthContext } from "../../../Components/Provider/AuthProvider";
 import toast from "react-hot-toast";
 import useAxiosPublic from "../../../Hooks/useAxiosPublic";
+import TasksCreated from "./TasksCreated/TasksCreated";
 
 
 const MyDashboard = () => {
@@ -51,6 +52,7 @@ const MyDashboard = () => {
       }}
     >
       <Boxes></Boxes>
+      {/* ---------- Add Tasks ----------- */}
       <div className="px-6 pt-6 border-b-2 flex items-center justify-between">
         <h2 className="text-3xl font-medium">My Tasks</h2>
         {/* button */}
@@ -150,6 +152,14 @@ const MyDashboard = () => {
 
         {/* modal ends */}
       </div>
+
+      {/* show created Tasks */}
+       <div>
+        <TasksCreated></TasksCreated>
+       </div>
+
+
+
     </div>
   );
 };
