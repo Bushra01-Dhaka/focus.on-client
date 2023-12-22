@@ -18,12 +18,12 @@ const TasksCreated = () => {
                 }
             </div>
 
-            <div className="flex-1">
-                <h1 className="text-center text-2xl font-medium">Ongoing</h1>
+            <div className="flex-1 bg-purple-300 rounded shadow-xl">
+                <h1 className="text-center text-2xl pt-4 font-medium">Ongoing</h1>
             </div>
 
-            <div className="flex-1">
-                <h1 className="text-center text-2xl font-medium">Completed</h1>
+            <div className="flex-1 bg-lime-300 rounded shadow-xl">
+                <h1 className="text-center text-2xl pt-4 font-medium">Completed</h1>
             </div>
         </div>
     );

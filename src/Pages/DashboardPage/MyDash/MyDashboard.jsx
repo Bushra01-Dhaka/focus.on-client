@@ -29,7 +29,8 @@ const MyDashboard = () => {
       description: data.description,
       deadlines: data.deadlines,
       priority: data.priority,
-      email: user?.email
+      email: user?.email,
+      status: "Todo",
     }
     console.log(taskInfo);
     axiosPublic.post("/tasks", taskInfo).then((res) => {

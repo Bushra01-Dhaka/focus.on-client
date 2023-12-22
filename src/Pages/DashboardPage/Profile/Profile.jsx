@@ -25,9 +25,9 @@ const Profile = () => {
             alt="Shoes"
           />
         </figure>
-        <div className="p-2">
-          <h2 className=" border-t-2 border-t-black">{user?.displayName}</h2>
-          <p className=" border-b-2 border-b-black">{user?.email}</p>
+        <div className="p-2 text-lg font-semibold text-center">
+          <p className=" ">Name: {user?.displayName}</p>
+          <p className="">Email: {user?.email}</p>
         </div>
       </div>
     </div>

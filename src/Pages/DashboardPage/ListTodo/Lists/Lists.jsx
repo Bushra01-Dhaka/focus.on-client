@@ -1,7 +1,7 @@
 import { FaStar } from "react-icons/fa";
 
 const Lists = ({ items, index }) => {
-  const { title, description, deadlines, priority, email } = items;
+  const { title, description, deadlines, priority, status } = items;
   return (
     <div>
         <div className="card bg-base-100 shadow-xl border-r-2 border-r-[#00D7FF]">
@@ -34,6 +34,12 @@ const Lists = ({ items, index }) => {
             <div className="pt-4">
             <p className="font-semibold">Target Timeline</p>
             <p>{deadlines}</p>
+            {
+                status === "Completed" &&  <p className="pt-4"><span className=" p-1 border-2 border-green-700 text-green-700 font-semibold rounded-xl">{status}</span></p>
+            }
+            {
+                status === "Ongoing"  &&  <p className="pt-4"><span className=" p-1 border-2 border-green-700 text-green-700 font-semibold rounded-xl">{status}</span></p>
+            }
             </div>
 
             </div>
