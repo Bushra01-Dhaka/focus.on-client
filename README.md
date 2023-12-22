@@ -1,8 +1,23 @@
-# React + Vite
+# **Focus.on** :rocket: - React based task management website
+### Live Site Link: https://focus-on-e0b82.web.app/ 
+-----
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Features :star:
+- Secure User Authentication
+- User Task management Dashboard Implementation
+- User can add, update, delete tasks
+- User swapped tasks status (Todo, Ongoing, Completed)
+- User-Friendly easy to understand layout
+- Bug Free website
+- Responsive, clean and minimalistic.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Technology :hammer:
+- React
+- React Router
+- Express
+- MongoDB
+- Firebase
+- AOS
+- Vercel 
+- Axios
+- TanStack Query
