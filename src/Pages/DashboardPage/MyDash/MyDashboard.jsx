@@ -43,9 +43,7 @@ const MyDashboard = () => {
         });
          //refetch all tasks data
          refetch();
-
-        //navigate
-        // navigate("/");
+        
       }
     });
 
