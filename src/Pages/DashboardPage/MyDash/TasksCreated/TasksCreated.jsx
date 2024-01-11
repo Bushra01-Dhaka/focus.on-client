@@ -1,4 +1,5 @@
 import useTasks from "../../../../Hooks/useTasks";
+import CompletedTodoList from "./CompletedTodoList";
 import TodoList from "./TodoList";
 
 const TasksCreated = () => {
@@ -36,11 +37,17 @@ const TasksCreated = () => {
 
             <div className="flex-1 bg-lime-300 rounded shadow-xl">
                 <h1 className="text-center text-2xl pt-4 font-medium">Completed</h1>
-                {
+                {/* {
                     completedTasks.map(items => <TodoList
                         key={items._id}
                         items={items}
                         ></TodoList>)
+                } */}
+                {
+                    completedTasks.map(items => <CompletedTodoList 
+                        key={items._id}
+                        items={items}
+                    ></CompletedTodoList>)
                 }
             </div>
         </div>

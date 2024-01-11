@@ -75,7 +75,7 @@ const Login = () => {
     return (
         <div  className="md:max-w-screen-xl mx-auto  rounded shadow-xl p-10">
         <Helmet>
-          <title>FitHub | Login</title>
+          <title>Focus.on | Login</title>
         </Helmet>
 
            <div className="flex flex-col-reverse md:flex-row justify-center items-center p-[50px]">

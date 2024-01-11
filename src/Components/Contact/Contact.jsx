@@ -26,8 +26,8 @@ const Contact = () => {
       }}
     >
        <Helmet>
-                <title>Focus.on | Contact</title>
-            </Helmet>
+                <title>Focus.on | Home</title>
+        </Helmet>
       <div className="flex flex-col md:flex-row justify-center items-center gap-6 py-10">
         {/* left-side */}
         <div data-aos="fade-zoom-in"  data-aos-delay="100" className="flex-1 p-8">

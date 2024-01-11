@@ -163,7 +163,7 @@ const SignUp = () => {
                 })}
                 name="password"
                 placeholder="password"
-                className="input input-bordered border-0 shadow-lg text-rose-500"
+                className="input input-bordered border-0 shadow-lg text-black"
                 required
               />
               {errors.password?.type === "required" && (

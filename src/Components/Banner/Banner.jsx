@@ -3,6 +3,7 @@ import { GoArrowDownRight } from "react-icons/go";
 import "./Banner.css";
 import { useContext } from "react";
 import { AuthContext } from "../Provider/AuthProvider";
+import { Helmet } from "react-helmet-async";
 
 const Banner = () => {
   const { user } = useContext(AuthContext);
@@ -13,6 +14,9 @@ const Banner = () => {
         backgroundImage: "url(https://i.ibb.co/XY089pZ/blue-banner-bg.png)",
       }}
     >
+       <Helmet>
+                <title>Focus.on | Home</title>
+            </Helmet>
       <div className="md:max-w-2xl mx-auto  bg-base-200 bg-opacity-40 p-6 my-auto rounded-md shadow-md">
         <h1 className="text-3xl  md:text-4xl lg:text-5xl text-center font-semibold">
           Elevate Your Productivity with{" "}
